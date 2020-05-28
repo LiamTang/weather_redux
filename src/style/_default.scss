@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/*font family*/
+$Abril_Fatface: "Abril Fatface", cursive;
+
+/*colors*/
+$black: #1d1d1d;
+$white: #ffffff;
+$box-shadow-color: #999999;
+$grey: #49515d;
+$lightgrey: #cccccc;
+
+/*media query*/
+// Small tablets and large smartphones (landscape view)
+$screen-small-max: 480px;
+
+// Small tablets (portrait view)
+$screen-medium-max: 768px;
+
+// Tablets and small desktops
+$screen-large-max: 992px;
+
+// Large tablets and desktops
+$screen-xLarge-max: 1200px;
+
+// small devices
+@mixin small {
+  @media (max-width: #{$screen-small-max}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin medium {
+  @media (max-width: #{$screen-medium-max}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin large {
+  @media (max-width: #{$screen-large-max}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xLarge {
+  @media (max-width: #{$screen-xLarge-max}) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  font-size: 16px;
+  @include xLarge {
+    font-size: 15px;
+  }
+  @include large {
+    font-size: 14px;
+  }
+  @include medium {
+    font-size: 13px;
+  }
+  @include small {
+    font-size: 12px;
+  }
+}

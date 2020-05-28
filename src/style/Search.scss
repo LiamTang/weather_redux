@@ -1,0 +1,35 @@
+@import "./default";
+
+.search-wrap {
+  flex: 10%;
+  color: $white;
+  background: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $Abril_Fatface;
+  font-size: 1rem;
+
+  span {
+    margin-left: 0.5rem;
+  }
+  input {
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+  }
+
+  button {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 0.3rem;
+    border: 1px solid $grey;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: $Abril_Fatface;
+    color: $grey;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "./default";
+
+.weatherDetail-wrap {
+  flex: 90%;
+  background: $white;
+  font-family: $Abril_Fatface;
+  font-size: 1rem;
+
+  .weatherDetail-current {
+    padding: 0.8rem;
+    @include medium {
+      display: flex;
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+    }
+    .greyColor {
+      color: $box-shadow-color;
+    }
+  }
+
+  .weatherDetail-future {
+    padding: 0.8rem;
+    @include medium {
+      display: flex;
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+      font-size: 1rem;
+    }
+    .greyColor {
+      color: $box-shadow-color;
+    }
+  }
+}

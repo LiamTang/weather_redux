@@ -1,0 +1,52 @@
+@import "./default";
+.weatherMain-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  font-family: $Abril_Fatface;
+  font-size: 1rem;
+
+  .weatherMain-title {
+    flex: 10%;
+    @include medium {
+      font-size: 0.8rem;
+    }
+    h2 {
+      color: $white;
+      font-family: $Abril_Fatface;
+      font-weight: 500;
+    }
+  }
+
+  .weatherMain-info {
+    flex: 70%;
+    display: flex;
+    color: $white;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 3rem 0.5rem 0;
+    border-bottom: 1px solid $lightgrey;
+
+    .weatherMain-info-box1 {
+      padding-left: 2rem;
+      h3 {
+        font-size: 7rem;
+        font-weight: 100;
+      }
+      h4 {
+        font-size: 1.5rem;
+        font-weight: 100;
+      }
+    }
+  }
+
+  .weatherMain-otherInfo {
+    flex: 20%;
+    display: flex;
+    color: $white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem 0 2rem;
+  }
+}

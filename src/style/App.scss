@@ -1,0 +1,41 @@
+@import "./default";
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card-wrap {
+    width: 80rem;
+    background: $black;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 5px $box-shadow-color;
+    padding: 8px;
+
+    .card {
+      display: flex;
+      @include medium {
+        flex-direction: column;
+      }
+      .card-left {
+        flex: 80%;
+        padding: 1rem;
+        background: url("../images/card_background.jpg") no-repeat;
+        background-size: cover;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-right {
+        flex: 20%;
+        background: $white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}
